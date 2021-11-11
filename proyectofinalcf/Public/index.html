@@ -32,11 +32,15 @@
     --score-color: rgba(240, 202, 36, .8);
     /* --hit-effect: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .3)); */
     --hit-color: rgba(255, 255, 255, .8);
-    --key-red: rgba(254, 45, 87, 1);
-    --key-blue: rgba(28, 121, 228, 1);
+    --key-red: rgb(223, 0, 0);
+    --key-yellow: rgb(252, 227, 0);
+    --key-green: rgb(0, 134, 22);
+    --key-blue: rgb(0, 63, 134);
     --key-orange: rgba(240, 128, 60, 1);
-    --keypress-red: linear-gradient(to top, rgba(254, 45, 87, .6), rgba(254, 45, 87, 0));
-    --keypress-blue: linear-gradient(to top, rgba(28, 121, 228, .6), rgba(28, 121, 228, 0));
+    --keypress-blue: linear-gradient(to top, rgba(0, 63, 134), rgba(28, 121, 228, 0));
+    --keypress-red: linear-gradient(to top, rgb(223, 0, 0), rgba(254, 45, 87, 0));
+    --keypress-yellow: linear-gradient(to top, rgba(252, 227, 0), rgba(254, 45, 87, 0));
+    --keypress-green: linear-gradient(to top, rgba(0, 134, 22), rgba(254, 45, 87, 0));
     --keypress-orange: linear-gradient(to top, rgba(240, 128, 60, .6), rgba(240, 128, 60, 0));
   }
 
@@ -130,6 +134,24 @@
     flex: 0 0 calc(100% / 4);
   }
 
+  /* ---------------------ENSAYO--------------------------- */
+  .note--0 {
+    background: var(--key-yellow) !important;
+  }
+
+  .note--1 {
+    background: var(--key-green) !important;
+  }
+
+  .note--2 {
+    background: var(--key-red) !important;
+  }
+
+  .note--3 {
+    background: var(--key-blue) !important;
+  }
+
+  /* ---------------------ENSAYO--------------------------- */
   .track:not(:last-child) {
     border-right: 1px solid grey;
   }
@@ -154,6 +176,14 @@
 
   .key--blue {
     background: var(--key-blue);
+  }
+
+  .key--green {
+    background: var(--key-green);
+  }
+
+  .key--yellow {
+    background: var(--key-yellow);
   }
 
   .key--orange {
@@ -217,6 +247,13 @@
     background-image: var(--keypress-blue);
   }
 
+  .keypress--green {
+    background-image: var(--keypress-green);
+  }
+
+  .keypress--yellow {
+    background-image: var(--keypress-yellow);
+  }
   .keypress--orange {
     background-image: var(--keypress-orange);
   }
@@ -440,7 +477,7 @@
 </style>
 
 <body>
-  <audio class="song" src="./media/music.mp3"></audio>
+  <audio class="song" src="./media/LoveToNigth.mp3"></audio>
 
   <main>
     <div class="game">
@@ -452,20 +489,20 @@
       <div class="track-container"></div>
 
       <div class="key-container">
-        <div class="key key--d key--red">
-          <div class="keypress keypress--red"></div>
+        <div class="key key--d key--yellow">
+          <div class="keypress keypress--yellow"></div>
           <span>D</span>
         </div>
-        <div class="key key--f key--blue">
-          <div class="keypress keypress--blue"></div>
+        <div class="key key--f key--green">
+          <div class="keypress keypress--green"></div>
           <span>F</span>
         </div>
-        <div class="key key--j key--blue">
-          <div class="keypress keypress--blue"></div>
+        <div class="key key--j key--red">
+          <div class="keypress keypress--red"></div>
           <span>J</span>
         </div>
-        <div class="key key--k key--red">
-          <div class="keypress keypress--red"></div>
+        <div class="key key--k key--blue">
+          <div class="keypress keypress--blue"></div>
           <span>K</span>
         </div>
       </div>
