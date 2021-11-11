@@ -35,8 +35,8 @@ void loop() {
   for (int i = 0; i < F; i++){
     for (int j = 0; j < C; j++){
       //Serial.print("Matriz completa: \n");  
-      //Serial.print(matriz[i][j]);
-      Serial.println(String(matriz[0][0])+" "+String(matriz[0][1])+" "+String(matriz[1][0])+" "+String(matriz[1][1]));
+      Serial.println(matriz[i][j]);
+      //Serial.println(String(matriz[0][0])+" "+String(matriz[0][1])+" "+String(matriz[1][0])+" "+String(matriz[1][1]+" "));
       //Serial.println(int(matriz[0][0]));
       //Serial.print(matriz[0][1]);
       //Serial.print(matriz[1][0]);
@@ -45,5 +45,5 @@ void loop() {
     }
     //Serial.println(" ");
   }
-  delay(500);
+  delay(100);
 }
