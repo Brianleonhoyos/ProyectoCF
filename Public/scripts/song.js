@@ -103,6 +103,6 @@ var k = {
 };
 
 var song = {
-  duration: 2,
+  duration: 90,
   sheet: [d, f, j, k]
 };
